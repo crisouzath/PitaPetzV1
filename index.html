@@ -1,0 +1,299 @@
+<html>
+
+<head>
+    <title>PitaPETZ - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            margin: 0;
+           
+            background-color: white;
+        }
+
+        a{
+             text-decoration: none;
+             color: white;
+            }
+
+        .main {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows:230% 20%;
+        }
+
+        .cabecalho {
+            background-color: red;
+            width: 100%;
+            height: 10%;
+            position: fixed;
+            display: grid;
+            grid-template-columns: 40% repeat(4,15%);
+            background-color:  #6a471e ;
+            position: fixed;
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+        }
+
+        .menus{
+            display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+        }
+
+        .logo{
+                display: flex;
+                align-items: center;
+                color: white;
+                padding-left: 50px;
+                font-size: 25px;
+            }
+
+            .logo b{
+                color:#B4D241;
+            }
+
+            .logo img{
+                height: 40px;
+                width: 40px;
+                margin-bottom: 3px;
+                margin-right: 5px;
+            }
+
+            .menus a:hover{
+                color: #B4D241;
+                transform: scale(1.1);
+                
+            }
+
+        .conteudo {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            "a a"
+            "b b"
+            "c c";
+            grid-template-columns: 100%;
+            grid-template-rows: 40% 5% 55%;
+        }
+
+        .box-img{
+            grid-area: a;
+            width: 100%;
+            height: 100%;
+            background: url(img/equipe.jpg);
+            background-size: cover;
+            background-position:center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box-hidden{
+                height:0;
+                width: 100%;
+                background-color:rgba(0, 0, 0, 0.493);
+                visibility: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                padding-left: 400px;
+                padding-right: 400px;
+                color: white;
+              
+            }
+
+            .box-img:hover .box-hidden{
+                height: 100%;
+                visibility: visible;
+                transition:all 0.5s ease-out;
+            }
+        
+        .titulo{
+            grid-area:b;
+            height: 100%;
+            width: 100%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-size: 42px;
+            font-weight: 100;           
+            margin-top: 10px;
+        }
+
+        .conteudo table{
+            grid-area: c;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+                text-align: justify;
+                margin-bottom: 30px;
+        }
+
+        .conteudo table tr{
+            width: 100%;
+            height:100%;
+            display:flex;
+        }
+
+        .conteudo table td{
+            padding: 40px;
+            width: 50%;
+            height:100%;
+            align-items: center;
+            flex-direction: column;
+            display:flex;
+        }
+
+        .conteudo table img{
+            width: 500px;
+            height: 300px;
+        }
+        .regua{
+                width: 40%;
+                height: 1px;
+                background-color: #2b2b2b41;
+        }
+
+        .rodape {
+            background-color: #150E06;
+            width: 100%;
+            height: 100%;
+            color: white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+        }
+
+        .btn-topo{
+                border-radius: 50%;
+                background-color: #150E06;
+                color:white;
+                display: flex;
+                align-items:center;
+                flex-direction:column;
+                margin-bottom: 20px;
+            }
+
+            .btn-topo img{
+                width: 30px;
+                height: 30px;
+                filter:invert(100%);
+                transform:scale(1.2)
+            }
+
+            .btn-topo a img:hover{
+                transform:scale(1.3);
+            }
+
+            
+            .social-media{
+                display:flex;
+                width: 20%;
+                height: 30%;
+                justify-content: space-between;
+            }
+
+            .social-media img{
+                filter:invert(100%);
+                cursor:pointer;
+            }
+
+            .social-media #facebook:hover{
+                transform: scale(1.2);
+                content:url("img/facebook.png");
+                filter: none;
+            }
+
+            .social-media #instagram:hover{
+                transform: scale(1.2);
+                content:url("img/instagram.png");
+                filter: none;
+            }
+
+            .social-media #twitter:hover{
+                transform: scale(1.2);
+                content:url("img/twitter.png");
+                filter: none;
+            }
+
+            .social-media #youtube:hover{
+                transform: scale(1.2);
+                content:url("img/youtube.png");
+                filter: none;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cabecalho">
+            <div class="logo"> 
+                <img src="img/pawprint.png">
+                <a href="index.html">Pita<b>PETZ</b>
+                </a>
+            </div>
+            <div class="menus">
+                <a href="loja.html">LOJA</a>
+            </div>
+            <div class="menus">
+                <a href="adocao.html">ADOÇÃO</a>
+            </div>
+            <div class="menus">
+                <a href="agenda.html">AGENDA</a>
+            </div>
+            <div class="menus">
+                <a href="contato.html">CONTATO</a>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="box-img">
+                <div class="box-hidden">A DotePETZ tem um grupo extenso de funcionários que prezam pelo bem-estar do seu pet, composta por diversas filiais espalhadas por todo Brasil.
+                    
+                </div>
+                
+            </div>
+            <div class="titulo">
+                <div class="regua"></div>
+                QUEM SOMOS
+                <div class="regua"></div>
+            </div>
+            <table cellpading="10px">
+                <tr>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae.</p>
+                        <p>Nulla facilisi morbi tempus iaculis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. At varius vel pharetra vel turpis nunc eget lorem dolor. ortor at auctor urna nunc id cursus. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Imperdiet massa tincidunt nunc pulvinar sapien. Mi quis hendrerit dolor magna eget.</p>
+                        <p>Suscipit tellus mauris a diam maecenas sed enim ut sem. Auctor augue mauris augue neque gravida in fermentum. Vulputate dignissim suspendisse in est ante. Quam pellentesque nec nam aliquam. Et ligula ullamcorper malesuada proin. Proin sagittis nisl rhoncus mattis rhoncus. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.</p>
+                       <img src="img/doguinhos.jpg">
+                    </td>
+                    <td>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Lectus proin nibh nisl condimentum id venenatis a condimentum vitae.</p>
+                        <p>Nulla facilisi morbi tempus iaculis. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. At varius vel pharetra vel turpis nunc eget lorem dolor. ortor at auctor urna nunc id cursus. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Imperdiet massa tincidunt nunc pulvinar sapien. Mi quis hendrerit dolor magna eget.</p>
+                        <p>Suscipit tellus mauris a diam maecenas sed enim ut sem. Auctor augue mauris augue neque gravida in fermentum. Vulputate dignissim suspendisse in est ante. Quam pellentesque nec nam aliquam. Et ligula ullamcorper malesuada proin. Proin sagittis nisl rhoncus mattis rhoncus. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.</p>
+                        <img src="img/gatinhos.jpg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="rodape">
+            <div class="btn-topo"><a href="#"><img src="img/up-arrow.png"></a></div>
+            
+            <div class="social-media">
+                <img id="facebook" src="img/facebook_pb.png">
+                <img id="instagram" src="img/instagram_pb.png">
+                <img id="twitter" src="img/twitter_pb.png">
+                <img id="youtube" src="img/youtube_pb.png">
+            </div>
+            <p>&copy2012-2022</p>
+        </div>
+    </div>
+</body>
+
+</html>

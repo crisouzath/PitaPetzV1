@@ -1,0 +1,374 @@
+<html>
+
+<head>
+    <title>PitaPETZ - Loja</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows: auto 20%;
+        }
+
+        .cabecalho {
+            background-color: red;
+            width: 100%;
+            height: 10%;
+            position: fixed;
+            display: grid;
+            grid-template-columns: 40% repeat(4, 15%);
+            background-color: #6a471e;
+            position: fixed;
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+        }
+
+        .menus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 50px;
+            font-size: 25px;
+        }
+
+        .logo b {
+            color: #B4D241;
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 3px;
+            margin-right: 5px;
+        }
+
+        .menus a:hover {
+            color: #B4D241;
+            transform: scale(1.1);
+        }
+        .conteudo {
+            width: 100%;
+            height: 100%;
+        }
+        .busca {
+            margin-top: 100px;
+            margin-left: 50px;
+            width: 80%;
+            height: 3%;
+            display: flex;
+            align-items: center;
+            padding-right: 7px;
+            border-bottom: 2px solid #B4D241;
+
+        }
+
+        .busca input:focus{
+            border: 0 none;
+        
+            outline:0;
+            box-shadow:0 0 0 0;
+
+        }
+
+        .busca img {
+            width: 25px;
+            height: 25px;
+            filter: opacity(50%);
+        }
+
+        .busca input {
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 17px;
+
+        }
+
+        .catalogo-produtos {
+            /* width: 100%; */
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-left: 50px;
+        }
+
+        .catalogo-produtos h1 {
+            font-weight: 400;
+            font-size: 25px;
+        }
+
+        .scroll-horizontal {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .produto {
+            background-color: white;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .produto:hover{
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+        }
+
+        .produto img {
+            height: 240px;
+            width: 200px;
+        }
+
+        .produto .preco {
+            color: #B4D241;
+            font-weight: bold;
+        }
+
+        .rodape {
+            background-color: #150E06;
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+            margin-top: 50px;
+        }
+
+        .btn-topo {
+            border-radius: 50%;
+            background-color: #150E06;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .btn-topo img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
+
+        }
+
+        .btn-topo a img:hover {
+            transform: scale(1.3);
+        }
+
+
+        .social-media {
+            display: flex;
+            width: 20%;
+            height: 30%;
+            justify-content: space-between;
+        }
+
+        .social-media img {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .social-media #facebook:hover {
+            transform: scale(1.2);
+            content: url("img/facebook.png");
+            filter: none;
+        }
+
+        .social-media #instagram:hover {
+            transform: scale(1.2);
+            content: url("img/instagram.png");
+            filter: none;
+        }
+
+        .social-media #twitter:hover {
+            transform: scale(1.2);
+            content: url("img/twitter.png");
+            filter: none;
+        }
+
+        .social-media #youtube:hover {
+            transform: scale(1.2);
+            content: url("img/youtube.png");
+            filter: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="img/pawprint.png">
+                <a href="index.html">Pita<b>PETZ</b>
+                </a>
+            </div>
+            <div class="menus">
+                <a href="loja.html">LOJA</a>
+            </div>
+            <div class="menus">
+                <a href="adocao.html">ADOÇÃO</a>
+            </div>
+            <div class="menus">
+                <a href="agenda.html">AGENDA</a>
+            </div>
+            <div class="menus">
+                <a href="contato.html">CONTATO</a>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="busca">
+                <input type="text" placeholder="Bucar produto, marca e outros">
+                <img src="img/lupa.png">
+            </div>
+            <div class="catalogo-produtos">
+                <h1>COMIDA PARA CACHORRO</h1>
+                <div class="scroll-horizontal">
+                    <div class="produto">
+                        <img src="img/racao1.png">
+                        Ração de cachorro
+                        <p class="preco">R$ 5,90</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao2.webp">
+                        Ração de cachorro
+                        <p class="preco">R$ 23,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao3.png">
+                        Ração de cachorro
+                        <p class="preco">R$ 15,90</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao5.webp">
+                        Ração de cachorro
+                        <p class="preco">R$ 5,90</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao1.png">
+                        Ração de cachorro
+                        <p class="preco">R$ 6,90</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="catalogo-produtos">
+                <h1>COMIDA PARA GATO</h1>
+                <div class="scroll-horizontal">
+                    <div class="produto">
+                        <img src="img/racao8.png">
+                        Ração de Gato
+                        <p class="preco">R$ 9,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao7.png">
+                        Ração de Gato
+                        <p class="preco">R$ 19,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao6.webp">
+                        Ração de Gato
+                        <p class="preco">R$ 8,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/racao9">
+                        Ração de Gato
+                        <p class="preco">R$ 4,80</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo-produtos">
+                <h1>COLEIRAS</h1>
+                <div class="scroll-horizontal">
+                    <div class="produto">
+                        <img src="img/coleira1.webp">
+                        Coleira de Couro
+                        <p class="preco">R$ 10,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/coleira2.webp">
+                        Coleira Vermelha
+                        <p class="preco">R$ 19,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/coleira3.png">
+                        Coleira Azul
+                        <p class="preco">R$ 10,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/coleira4.webp">
+                        Coleira Marrom
+                        <p class="preco">R$ 4,80</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo-produtos">
+                <h1>COMEDOUROS</h1>
+                <div class="scroll-horizontal">
+                    <div class="produto">
+                        <img src="img/comedouro1.jpg">
+                        Comedouro Lilás
+                        <p class="preco">R$ 10,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/comedouro2.jpg">
+                        Comedouro Snoop
+                        <p class="preco">R$ 19,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/comedouro3.jpg">
+                        Comedouro Vermelho
+                        <p class="preco">R$ 10,80</p>
+                    </div>
+                    <div class="produto">
+                        <img src="img/comedouro4.webp">
+                        Comedouro Roxo
+                        <p class="preco">R$ 4,80</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="btn-topo"><a href="#"><img src="img/up-arrow.png"></a></div>
+
+            <div class="social-media">
+                <img id="facebook" src="img/facebook_pb.png">
+                <img id="instagram" src="img/instagram_pb.png">
+                <img id="twitter" src="img/twitter_pb.png">
+                <img id="youtube" src="img/youtube_pb.png">
+            </div>
+            <p>&copy2012-2022</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

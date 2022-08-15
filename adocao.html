@@ -1,0 +1,267 @@
+<html>
+
+<head>
+    <title>PitaPETZ - Adoção</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows: auto 20%;
+        }
+
+        .cabecalho {
+            width: 100%;
+            height: 10%;
+            position: fixed;
+            display: grid;
+            grid-template-columns: 40% repeat(4, 15%);
+            background-color: #6a471e;
+            position: fixed;
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+        }
+
+        .menus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 50px;
+            font-size: 25px;
+        }
+
+        .logo b {
+            color: #B4D241;
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 3px;
+            margin-right: 5px;
+        }
+
+        .menus a:hover {
+            color: #B4D241;
+            transform: scale(1.1);
+        }
+
+        .conteudo {
+            width: 100%;
+            height: 100%;
+        }
+
+        .apresentacao {
+            width: 1330px;
+            height: 350px;
+            background-image: url(img/animais-adocao.png);
+            background-repeat:no-repeat;
+            background-position-x: 650px;
+        }
+
+        .infos{
+            height: 50px;
+            width: 400px;
+            text-align: justify;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+        .infos p{
+            font-size: 20px;
+            color: #150E06;
+        }
+
+        .titulo{
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .titulo h2{
+            color:#6a471e;
+        }
+
+        .catalogo-animais{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .animal img{
+            height: 300px;
+            width: 300px;
+        }
+
+        .animal{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .animal:hover{
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+            
+        }
+
+        .rodape {
+            background-color: #150E06;
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+            margin-top: 50px;
+        }
+
+        .btn-topo {
+            border-radius: 50%;
+            background-color: #150E06;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .btn-topo img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
+            transform: scale(1.2)
+        }
+
+        .btn-topo a img:hover {
+            transform: scale(1.3);
+        }
+
+
+        .social-media {
+            display: flex;
+            width: 20%;
+            height: 30%;
+            justify-content: space-between;
+        }
+
+        .social-media img {
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        .social-media #facebook:hover {
+            transform: scale(1.2);
+            content: url("img/facebook.png");
+            filter: none;
+        }
+
+        .social-media #instagram:hover {
+            transform: scale(1.2);
+            content: url("img/instagram.png");
+            filter: none;
+        }
+
+        .social-media #twitter:hover {
+            transform: scale(1.2);
+            content: url("img/twitter.png");
+            filter: none;
+        }
+
+        .social-media #youtube:hover {
+            transform: scale(1.2);
+            content: url("img/youtube.png");
+            filter: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="img/pawprint.png">
+                <a href="index.html">Pita<b>PETZ</b>
+                </a>
+            </div>
+            <div class="menus">
+                <a href="loja.html">LOJA</a>
+            </div>
+            <div class="menus">
+                <a href="adocao.html">ADOÇÃO</a>
+            </div>
+            <div class="menus">
+                <a href="agenda.html">AGENDA</a>
+            </div>
+            <div class="menus">
+                <a href="contato.html">CONTATO</a>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="apresentacao">
+                <div class="infos">
+                    <h1>BEM-VINDO AO SITE DE ADOÇÃO</h1>
+                    <p>Além de vender produtos para seu pet, nós também resgatamos animais em situação de risco. Esta
+                        seção é reservada para aqueles que possam dar carinho, amor e um lar para eles.</p>
+                </div>
+            </div>
+            <div class="titulo"><h2>Conheça os animais</h2></div>
+            <div class="catalogo-animais">
+                <div class="animal">
+                    <img src="img/cachorro1.jpg">
+                    <h3>Loli</h3>
+                    Porte Médio<br>
+                    3 anos
+                </div>
+                <div class="animal">
+                    <img src="img/cachorro2.jpg">
+                    <h3>Razor</h3>
+                    Porte Médio<br>
+                    4 anos
+                </div>
+                <div class="animal">
+                    <img src="img/cachorro3.jpg">
+                    <h3>Loli</h3>
+                    Porte Pequeno<br>
+                    3 meses
+                </div>
+            </div>
+            
+            
+
+        </div>
+        <div class="rodape">
+            <div class="btn-topo"><a href="#"><img src="img/up-arrow.png"></a></div>
+
+            <div class="social-media">
+                <img id="facebook" src="img/facebook_pb.png">
+                <img id="instagram" src="img/instagram_pb.png">
+                <img id="twitter" src="img/twitter_pb.png">
+                <img id="youtube" src="img/youtube_pb.png">
+            </div>
+            <p>&copy2012-2022</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <title>PitaPETZ - Agenda</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+
+            background-color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            grid-template-rows: auto 20%;
+        }
+
+        .cabecalho {
+            width: 100%;
+            height: 10%;
+            position: fixed;
+            display: grid;
+            grid-template-columns: 40% repeat(4, 15%);
+            background-color: #6a471e;
+            position: fixed;
+            box-shadow: 0px 2px 5px #2c2c2ca1;
+        }
+
+        .menus {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 50px;
+            font-size: 25px;
+        }
+
+        .logo b {
+            color: #B4D241;
+        }
+
+        .logo img {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 3px;
+            margin-right: 5px;
+        }
+
+        .menus a:hover {
+            color: #B4D241;
+            transform: scale(1.1);
+        }
+
+        .conteudo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        fieldset{
+            margin: 100px;
+            box-shadow:0px 2px 5px #2c2c2ca1;
+            border: none;
+            width: 50%;
+        }
+
+        fieldset input:focus, textarea{
+            box-shadow: 0 0 0 0;
+    border: 0 none;
+    border-bottom: 1px solid #B4D241;
+    outline: 0;
+        }
+
+        fieldset input, textarea{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #B4D241;
+            font-size:  17px;
+        }
+
+        fieldset input[type="date"], input[type="time"]{
+
+            width: 49%;
+            color: rgb(143, 143, 143);
+        }
+
+        fieldset p, button{
+            margin: 20px;
+        }
+
+        fieldset button{
+            background-color: #B4D241;
+            color: white;
+            border:none;
+            width: 100px;
+            height: 30px;
+        }
+
+        fieldset button:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 2px 5px #2c2c2ca1
+        }
+        .rodape {
+            background-color: #150E06;
+            width: 100%;
+            height: 100%;
+            color: white;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 5px;
+        }
+
+        .btn-topo{
+                border-radius: 50%;
+                background-color: #150E06;
+                color:white;
+                display: flex;
+                align-items:center;
+                flex-direction:column;
+                margin-bottom: 20px;
+            }
+
+            .btn-topo img{
+                width: 30px;
+                height: 30px;
+                filter:invert(100%);
+                transform:scale(1.2)
+            }
+
+            .btn-topo a img:hover{
+                transform:scale(1.3);
+            }
+
+            
+            .social-media{
+                display:flex;
+                width: 20%;
+                height: 30%;
+                justify-content: space-between;
+            }
+
+            .social-media img{
+                filter:invert(100%);
+                cursor:pointer;
+            }
+
+            .social-media #facebook:hover{
+                transform: scale(1.2);
+                content:url("img/facebook.png");
+                filter: none;
+            }
+
+            .social-media #instagram:hover{
+                transform: scale(1.2);
+                content:url("img/instagram.png");
+                filter: none;
+            }
+
+            .social-media #twitter:hover{
+                transform: scale(1.2);
+                content:url("img/twitter.png");
+                filter: none;
+            }
+
+            .social-media #youtube:hover{
+                transform: scale(1.2);
+                content:url("img/youtube.png");
+                filter: none;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="img/pawprint.png">
+                <a href="index.html">Pita<b>PETZ</b>
+                </a>
+            </div>
+            <div class="menus">
+                <a href="loja.html">LOJA</a>
+            </div>
+            <div class="menus">
+                <a href="adocao.html">ADOÇÃO</a>
+            </div>
+            <div class="menus">
+                <a href="agenda.html">AGENDA</a>
+            </div>
+            <div class="menus">
+                <a href="contato.html">CONTATO</a>
+            </div>
+        </div>
+        <div class="conteudo">
+            <fieldset> 
+                <p>AGENDE UMA VISITA CONOSCO</p>
+                <form action="" method="post">
+                <p>Nome
+                    <input type="text" placeholder="Lucas Silva e Silva">
+                </p>
+                <p>Email
+                     <input type="email" placeholder="exemplo@gmail.com">
+                </p>
+                <p>Data e Hora<br>
+                    <input type="date" min="a/m/d">
+                     <input type="time">
+                </p>
+                <p>Motivo da Visita
+                   <textarea rows="5" spellcheck="true"></textarea>
+                </p> 
+                <button>AGENDAR</button>
+            </form>
+        </fieldset>
+           
+        </div>
+        <div class="rodape">
+            <div class="btn-topo"><a href="#"><img src="img/up-arrow.png"></a></div>
+
+            <div class="social-media">
+                <img id="facebook" src="img/facebook_pb.png">
+                <img id="instagram" src="img/instagram_pb.png">
+                <img id="twitter" src="img/twitter_pb.png">
+                <img id="youtube" src="img/youtube_pb.png">
+            </div>
+            <p>&copy2012-2022</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
